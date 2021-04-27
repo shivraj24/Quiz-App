@@ -1,9 +1,14 @@
 import React from 'react';
-
-// import { Container } from './styles';
-
+import {useContext} from 'react';
+import QuizContext from "../Helper/Context";
+import "../App.css";  
 function Component() {
-  return <div> Main Menu</div>;
+  const {GameState, setGameState} =  useContext(QuizContext);
+  return <div className="Menu">
+    <button onClick = {() =>{
+      setGameState("quiz");
+    }}> Start Quiz</button>
+  </div>;
 }
 
 export default Component;
