@@ -2,7 +2,7 @@ import React from 'react';
 import {useContext} from 'react';
 import QuizContext from "../Helper/Context";
 import "../App.css";  
-function Component() {
+function MainMenu() {
   const {GameState, setGameState} =  useContext(QuizContext);
   return <div className="Menu">
     <button onClick = {() =>{
@@ -11,4 +11,4 @@ function Component() {
   </div>;
 }
 
-export default Component;
+export default MainMenu;

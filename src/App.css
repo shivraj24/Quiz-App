@@ -5,9 +5,9 @@
   align-items: center;
   flex-direction: column;
 }
-.Menu {
-  height: 500px;
-  width: 500px;
+.Menu,.Quiz ,.EndQuiz{
+  height: 600px;
+  width: 800px;
   border-radius: 10px;
   background-color: lightseagreen;
   display: flex;
@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
 }
- .Menu button {
+ .Menu button,.Quiz button, .EndQuiz button {
    height: 50px;
    width: 300px;
    margin: 5px;
@@ -24,3 +24,27 @@
    font-size: 20px;
    cursor: pointer;
  }
+
+ .Menu, .Quiz ,.EndQuiz{
+   color: white;
+   justify-content: center;
+   align-items:  center;
+ }
+ .Quiz h3 {
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+  font-size: 25px;
+  color: black;
+  font : bold
+ }
+
+
+.options{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+   
+}

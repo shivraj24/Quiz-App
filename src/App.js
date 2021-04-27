@@ -9,6 +9,7 @@ import './App.css';
 
 function App() {
   const [GameState, setGameState] = useState("menu");
+  const [GameScore,setGameScore] = useState(0);
 
 
   return (
@@ -16,10 +17,10 @@ function App() {
     <div className="App">
 
       <h1> Quiz App</h1>
-      <QuizContext.Provider value={{GameState,setGameState}}>
-      {GameState === "menu" && <MainMenu />}
-      {GameState === "quiz" && <Quiz />}
-      {GameState === "endquiz" && <EndQuiz />}
+      <QuizContext.Provider value={{GameState,setGameState,GameScore,setGameScore}}>
+        {GameState === "menu" && <MainMenu />}
+        {GameState === "quiz" && <Quiz />}
+        {GameState === "endquiz" && <EndQuiz />}
 
       </QuizContext.Provider>
       
